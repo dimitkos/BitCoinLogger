@@ -46,10 +46,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FetchDataImplementation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\api.Interfaces\api.Interfaces.csproj">
+      <Project>{186927CB-D38E-46AC-8C33-4CF533FCBA71}</Project>
+      <Name>api.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ExternalApi\ExternalApi.Interfaces\ExternalApi.Interfaces.csproj">
+      <Project>{64416875-5157-41BF-B267-BFDD1D94007B}</Project>
+      <Name>ExternalApi.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ExternalApi\ExternalApi.Types\ExternalApi.Types.csproj">
+      <Project>{B956E23F-3F07-49B7-A846-343CC3D1B17C}</Project>
+      <Name>ExternalApi.Types</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
