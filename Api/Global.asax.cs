@@ -1,4 +1,8 @@
-﻿using SimpleInjector;
+﻿using api.Implementation;
+using api.Interfaces;
+using ExternalApi.Implementation;
+using ExternalApi.Interfaces;
+using SimpleInjector;
 using SimpleInjector.Integration.WebApi;
 using SimpleInjector.Lifestyles;
 using System;
@@ -17,7 +21,11 @@ namespace Api
             var container = new Container();
 
             container.Options.DefaultScopedLifestyle = new AsyncScopedLifestyle();
-            //container.Register<IService, OnCoursesImplementation>(Lifestyle.Scoped);
+
+            container.Register<IGDAXService, GDAXImplementation>(Lifestyle.Scoped);
+            container.Register<IBitstampService, BitstampImplementation>(Lifestyle.Scoped);
+            container.Register<IBitcoinLoggerService, FetchDataImplementation>(Lifestyle.Scoped);
+
             container.RegisterWebApiControllers(GlobalConfiguration.Configuration);
 
             container.Verify();

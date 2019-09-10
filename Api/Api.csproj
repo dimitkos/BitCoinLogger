@@ -105,7 +105,28 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\api.Controllers\api.Controllers.csproj">
+      <Project>{16757f6d-a34b-4255-a754-a8f657add190}</Project>
+      <Name>api.Controllers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\api.Implementation\api.Implementation.csproj">
+      <Project>{20BFBE12-DD4D-4B0E-9405-5D955132EF64}</Project>
+      <Name>api.Implementation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\api.Interfaces\api.Interfaces.csproj">
+      <Project>{186927CB-D38E-46AC-8C33-4CF533FCBA71}</Project>
+      <Name>api.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ExternalApi\ExternalApi.Implementation\ExternalApi.Implementation.csproj">
+      <Project>{2D55556D-2F65-441A-8577-11706D41E774}</Project>
+      <Name>ExternalApi.Implementation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ExternalApi\ExternalApi.Interfaces\ExternalApi.Interfaces.csproj">
+      <Project>{64416875-5157-41BF-B267-BFDD1D94007B}</Project>
+      <Name>ExternalApi.Interfaces</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
