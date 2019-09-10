@@ -16,5 +16,15 @@ namespace BitLoggerTests
 
             Xunit.Assert.NotNull(response);
         }
+
+        [TestMethod]
+        public void GetDataFromGdax()
+        {
+            var service = new GDAXImplementation();
+
+            var response = service.GetDataFromGdax();
+
+            Xunit.Assert.NotNull(response);
+        }
     }
 }
