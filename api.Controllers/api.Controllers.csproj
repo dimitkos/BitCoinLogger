@@ -61,6 +61,10 @@
       <Project>{186927CB-D38E-46AC-8C33-4CF533FCBA71}</Project>
       <Name>api.Interfaces</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ExternalApi\ExternalApi.Types\ExternalApi.Types.csproj">
+      <Project>{B956E23F-3F07-49B7-A846-343CC3D1B17C}</Project>
+      <Name>ExternalApi.Types</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
