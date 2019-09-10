@@ -44,5 +44,11 @@
     <Compile Include="IGDAXService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ExternalApi.Types\ExternalApi.Types.csproj">
+      <Project>{B956E23F-3F07-49B7-A846-343CC3D1B17C}</Project>
+      <Name>ExternalApi.Types</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
