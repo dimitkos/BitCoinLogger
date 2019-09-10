@@ -23,6 +23,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExternalApi.Interfaces", "E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExternalApi.Types", "ExternalApi\ExternalApi.Types\ExternalApi.Types.csproj", "{B956E23F-3F07-49B7-A846-343CC3D1B17C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unit Tests", "Unit Tests", "{4932F18D-3E5F-4836-AB75-7404D92BA463}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitLoggerTests", "BitLoggerTests\BitLoggerTests.csproj", "{0F28C650-5D35-4F55-A3CD-83CDD3CD841B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +65,10 @@ Global
 		{B956E23F-3F07-49B7-A846-343CC3D1B17C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B956E23F-3F07-49B7-A846-343CC3D1B17C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B956E23F-3F07-49B7-A846-343CC3D1B17C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F28C650-5D35-4F55-A3CD-83CDD3CD841B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F28C650-5D35-4F55-A3CD-83CDD3CD841B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F28C650-5D35-4F55-A3CD-83CDD3CD841B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F28C650-5D35-4F55-A3CD-83CDD3CD841B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -73,6 +81,7 @@ Global
 		{2D55556D-2F65-441A-8577-11706D41E774} = {169E665C-711D-4DB5-A897-5425EB98FE57}
 		{64416875-5157-41BF-B267-BFDD1D94007B} = {169E665C-711D-4DB5-A897-5425EB98FE57}
 		{B956E23F-3F07-49B7-A846-343CC3D1B17C} = {169E665C-711D-4DB5-A897-5425EB98FE57}
+		{0F28C650-5D35-4F55-A3CD-83CDD3CD841B} = {4932F18D-3E5F-4836-AB75-7404D92BA463}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F9EB8FF7-F4FE-4EB0-97EE-22C91DB51DDA}
