@@ -35,5 +35,22 @@ namespace api.Controllers
                 return Request.CreateErrorResponse(HttpStatusCode.InternalServerError, " Data Not Found");
             }
         }
+
+
+        [HttpGet]
+        [ActionName("getBitstampData")]
+        public HttpResponseMessage GetBitstampData()
+        {
+            var response = bitcoinLoggerService.FecthBitstampData();
+
+            if (response != null)
+            {
+                return Request.CreateResponse<BitstampResponse>(HttpStatusCode.OK, response);
+            }
+            else
+            {
+                return Request.CreateErrorResponse(HttpStatusCode.InternalServerError, "Bitstamp Data Not Found");
+            }
+        }
     }
 }
