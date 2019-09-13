@@ -2,9 +2,84 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>BitcoinLogger</title>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="StyleSheet.css" media="screen" />
+
 </head>
 <body>
-    <h1>Welcome to my Api</h1>
+    <!--<h1>Welcome to my Api</h1>
+
+    <input type="button" value="Get Bitstamp" onclick="find();" />
+
+    <input type="button" value="Get Gdax" onclick="find2();" />
+    <ul id=" btmdata"></ul>-->
+
+
+
+
+
+    <div id="formarea">
+        <h2>Get Bitstamp Informations</h2>
+        <input id="get" type="submit" value="Get">
+
+    </div>
+    <div class="container">
+
+
+
+    </div>
+
+    <div id="formarea">
+        <h2>Get Gdax Informations</h2>
+        <input id="getGdax" type="submit" value="Get">
+
+    </div>
+    <div class="containerGdax">
+
+
+
+    </div>
+
+    <!--Testttttttttt-->
+
+    <div id="Pricearea">
+        <h2>Fetch Price from Bitstamp</h2>
+        <input id="getPrice" type="submit" value="Get">
+
+    </div>
+    <div class="Pricecontainer">
+
+
+
+    </div>
+
+    <div id="PriceareaGdax">
+        <h2>Fetch Price from Gdax</h2>
+        <input id="getPriceGdax" type="submit" value="Get">
+
+    </div>
+    <div class="PriceGdaxcontainer">
+
+
+
+    </div>
+    <br /><br /><br /><br />
+
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for source.." title="Type in a name">
+
+    <table id="myTable" cellpadding="2" cellspacing="2" border="0" width="40%" align="center">
+        <tr></tr>
+        <tr></tr>
+        <tr>
+            <th>Source</th>
+            <th>Price</th>
+            <th>Timestamp</th>
+        </tr>
+    </table>
+    <input id="btn" type="submit" value="Get table">
+
+    <script src="main.js"></script>
+
 </body>
 </html>
